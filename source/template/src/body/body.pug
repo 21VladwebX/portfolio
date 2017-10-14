@@ -1,0 +1,23 @@
+section
+  .iconPack
+    p Icon Pack
+    span.iconPack__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    p.iconPack__visit Visit one
+
+  div.socialIconPack
+    .socialIconPack__header
+      span.socialIconPack__header-Brownsocial Brownsocial
+      icon pack
+      span.socialIconPack__header-version v1.0
+      span.socialIconPack__header-size 32x32 64x64 128x128
+    .socilaIconPack__body
+      .socialIconPackBody__row1
+        -for(var i = 0; i < 6; i++){
+          a(href="#")
+            img.socialIconPackBody__row1-img(alt="Social img" src="images/social/soc"+ i+".jpeg")
+        -}
+      .socialIconPackBody__row2
+        -for(var i = 6; i < 12; i++){
+          a(href="#")
+            img.socialIconPackBody__row2-img(alt="Social img" src="images/social/soc"+ i+".jpeg")
+        -}
