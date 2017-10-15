@@ -6,11 +6,11 @@ section
 
   div.socialIconPack
     .socialIconPack__header
-      span.socialIconPack__header-Brownsocial Brownsocial
-      icon pack
+      span.socialIconPack__header-Brownsocial Brown
+      span.socialIconPack__header-other social icon pack
       span.socialIconPack__header-version v1.0
       span.socialIconPack__header-size 32x32 64x64 128x128
-    .socilaIconPack__body
+    .socialIconPack__body
       .socialIconPackBody__row1
         -for(var i = 0; i < 6; i++){
           a(href="#")
@@ -21,3 +21,41 @@ section
           a(href="#")
             img.socialIconPackBody__row2-img(alt="Social img" src="images/social/soc"+ i+".jpeg")
         -}
+  .socialIcon
+    .socialIcon__twiter
+      a(href="#")
+        img(src="images/socImg/twitter.png" alt="img twitter")
+    .socialIcon__wifi
+      a(href="#")
+        img(src="images/socImg/wifi.png" alt="img wifi")
+    .socialIcon__facebook
+      a(href="#")
+        img(src="images/socImg/facebook.jpeg" alt="img facebook")
+
+
+  .body
+    .body__left
+      .body__left-img
+        img(src="images/i.png" alt="img")
+      .body__left-text
+        p Lorem ipsum
+        span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p
+          a(href="#") More info...
+    .body__right
+      .body__right-img
+        img(src="images/right.png" alt="img")
+      .body__right-text
+        p Lorem ipsum
+        span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p
+          a(href="#") More info...
+  .main
+    p.main__p Space for more your content
+    span.main__span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .main__img
+      img(src="images/site1.jpg" alt="img")
+      img(src="images/site2.jpg" alt="img")
+      img(src="images/site3.jpg" alt="img")
+    .main__btn
+      button.main__btn-btn(type="button" name="btn") Go get it

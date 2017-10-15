@@ -1,19 +1,64 @@
 .socialIconPack
-  border: 10px solid red;
+  //border: 10px solid red;
   position: absolute;
-  width: 400px;
-  height: 300px;
-  top: 200px;
-  left: 500px;
+  width: 40%;
+
+  top: 25%;
+  left: 40%;
+
   &__header
+    width: 100%;
+    height: 60px;
     color: white;
     letter-spacing: -1px;
+    background-image: url(../images/tree.jpg);
+    position: relative;
+
+    span
+      position: absolute;
+
+
+    &-Brownsocial,&-other
+      font-size: 2em;
+      top: 25%;
+      margin-left: -5%;
+    &-Brownsocial
+      left: 10%;
+
+    &-other
+      left: 28%;
+
+    &-version
+      display: block;
+      top: 10%;
+      left: 70%;
+      font-size: 0.6em;
+
+    &-size
+      display: block;
+      text-align: center;
+      font-size: 0.7em;
+      width: 8%;
+      top: 15%;
+      left: 86%;
+
     &-Brownsocial
       color: brown;
+      left: 8%;
+
+
+
   &__body
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-  &Body__row1-img, &Body__row2-img
-    height: 50px;
-    width: 65px;
+    background-color: rgb(70, 70, 70);
+
+  &Body__row1, &Body__row2
+    display: grid;
+    height: 65px;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(6,65px);
+    grid-row-gap: unset;
+    justify-content: space-around;
+    grid-column-gap: 10px;
+    img
+      width: 100%;
+      height: 100%;
