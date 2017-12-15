@@ -1,7 +1,12 @@
 .socialIconPack
-  width: 40%;
+  position: absolute;
+
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  opacity: 1;
+
+  width: 30%;
   top: 35%;
-  left: 45%;
+  left: 50%;
 
   &__header
     width: 100%;
@@ -11,7 +16,7 @@
 
 
     &-Brownsocial,&-other
-      font-size: 1.5em;
+      font-size: 1em;
       top: 25%;
       margin-left: -5%;
 
@@ -36,18 +41,18 @@
       left: 8%;
 
   &__body
-    display: grid;
-    grid-template-rows: repeat(4,100px);
-    grid-template-columns: repeat(3,100px);
+    background-color: rgb(70, 70, 70);
+
 
   &Body__row1, &Body__row2
     display: grid;
-    height: 45px;
-    grid-templates-rows: repeat(2,100px);
-    grid-templates-columns: repeat(4,100px);
-    grid-row-gap: 2px;
-    justify-content: space-between;
-    grid-column-gap: 0px;
+    height: 100px;
+    grid-template-rows: repeat(4, 50px);
+    grid-template-columns: repeat(3 ,50px);
+    grid-column-gap: 1px;
+    justify-content: space-around;
+    grid-row-gap: 1px;
     img
+      border-radius: 10%;
       width: 80%;
       height: 80%;
