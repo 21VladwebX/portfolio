@@ -71,17 +71,17 @@
 			/*-------------- SASS ---------------*/
 			// .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 			/*-------------- STYLUS ---------------*/
-			// .pipe(stylus({compress: true}))
-			.pipe(stylus())
-			// .pipe(autoprefixer({
-		  //           browsers: ['last 4 versions','Firefox > 20','last 2 Chrome versions','last 2 major versions'],
-		  //           cascade: false
-		  //       }))
+			.pipe(stylus({compress: true}))
+			// .pipe(stylus())
+			.pipe(autoprefixer({
+		            browsers: ['last 4 versions','Firefox > 20','last 2 Chrome versions','last 2 major versions'],
+		            cascade: false
+		        }))
 			// // .pipe(postcss())
-			// .pipe(cleanCSS({debug: true}, function(details) {
-		  //     console.log(details.name + ': ' + details.stats.originalSize);
-		  //     console.log(details.name + ': ' + details.stats.minifiedSize);
-		  //   }))
+			.pipe(cleanCSS({debug: true}, function(details) {
+		      console.log(details.name + ': ' + details.stats.originalSize);
+		      console.log(details.name + ': ' + details.stats.minifiedSize);
+		    }))
 			.pipe(rename('main.min.css'))
 			.pipe(gulp.dest(css.out));
 		});
